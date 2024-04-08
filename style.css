@@ -1,0 +1,57 @@
+html {
+    font-size: 16px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+main {
+    position: relative;
+    top: 80px;
+}
+header {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+.navbar {
+    display: flex;
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+    border: 0px solid gainsboro;
+    border-radius: 40px;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+.navbar ul {
+    display: inline-flex;
+    padding: 10px;
+}
+.navbar li {
+    display: inline-flex;
+    margin: 0px 80px
+}
+.navbar li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto';
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: text-decoration 800ms ease-out;
+    text-decoration: underline transparent;
+}
+.navbar li a:hover {
+    text-decoration-color: black;
+}
+img {
+    width: 20px
+}
+.firstBanner {
+    
+}
