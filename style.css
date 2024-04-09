@@ -63,7 +63,7 @@ img {
     text-align: center;
     background-image: url("./Resources/Untitled\ design.png");
     margin: 0;
-    height: 500px;
+    height: 700px;
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -91,6 +91,7 @@ img {
     font-weight: 500;
     font-style: oblique;
     padding: 25px;
+    transition: font-size 0.3s ease-in;
 }
 .explore #discover {
     font-size: 1.5rem;
@@ -98,7 +99,7 @@ img {
     margin: 0 0 20px 0;
     padding-left: 20px;
     padding-bottom: 5px;
-
+    transition: font-size 0.3s ease-in;
 }
 .exploreHead {
     border: 1px solid transparent;
@@ -106,6 +107,19 @@ img {
     width: 35%;
     margin: 30px;
     border-radius: 30px;
+    transition: width 0.3s ease-in;
+}
+.exploreHead:hover {
+    width: 45%;
+}
+.exploreHead:hover h2 {
+    font-size: 4rem;
+}
+.exploreHead:hover #discover {
+    font-size: 2rem;
+}
+.exploreHead:hover {
+    width: 45%;
 }
 .featured {
     display: flex;
@@ -164,21 +178,74 @@ img {
     font-style: oblique;
     font-size: 3rem;
     padding: 15px;
+    transition: width 0.3s ease-in, font-size 0.3s ease-in;
+
+}
+.highlight h2:hover {
+    width: 42%;
+    font-size: 4rem;
 }
 .highlight figure {
     display: flex;
     align-items: center;
     text-align: center; 
     flex-direction: column;
-}
-.highlight img {
-    width: 95%;
-    margin: auto;
-    height: auto;
     border: 1px solid transparent;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border-radius: 20px;
+    border-radius: 50px;
+    width: 80%;
+    margin: auto;
+    transition: width 0.5s ease;
+    margin-bottom: 50px;
+}
+.highlight figure:hover {
+    width: 90%;
+}
+.highlight img {
+    width: 100%;
+    margin: 0;
+    height: auto;
+    padding: 0;
+    border: 1px solid transparent;
+    border-radius: 50px 50px 0 0;
+}
+.highlight figcaption {
+    width: 80%;
+    padding: 30px;
+    font-family: 'roboto';
+    font-size: 1.5rem;
+    height: auto;
+    transition: font-size 0.5s ease;
+}
+.highlight figure:hover figcaption {
+    font-size: 1.68rem;
 }
 footer {
-
+    background-color: black;
+    margin: 0;
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+footer ul {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-right: 200px;
+    padding: 5px;
+}
+footer li {
+    display: inline-flex;
+    padding: 20px;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+}
+footer p {
+    color: white;
+    margin: 0;
+    margin-left: 225px;
+    padding: 25px;
 }
