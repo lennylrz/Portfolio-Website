@@ -152,8 +152,32 @@ img {
 .image-container {
     position: relative; /* Ensure the container is positioned */
 }
-.highlight {
 
+.highlight h2{
+    border: 1px solid transparent;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 32%;
+    margin: 30px;
+    border-radius: 30px;
+    font-family: 'roboto';
+    font-weight: 500;
+    font-style: oblique;
+    font-size: 3rem;
+    padding: 15px;
+}
+.highlight figure {
+    display: flex;
+    align-items: center;
+    text-align: center; 
+    flex-direction: column;
+}
+.highlight img {
+    width: 95%;
+    margin: auto;
+    height: auto;
+    border: 1px solid transparent;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
 }
 footer {
 
