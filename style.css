@@ -87,33 +87,45 @@ img {
 }
 .explore h2 {
     font-size: 3rem;
-    margin: 15px;
+    margin: 0px;
     font-weight: 500;
+    font-style: oblique;
+    padding: 25px;
 }
-.explore p {
+.explore #discover {
     font-size: 1.5rem;
-    color: gray;
     margin-left: 15px;
-    margin-top: 0;
+    margin: 0 0 20px 0;
+    padding-left: 20px;
+    padding-bottom: 5px;
+
+}
+.exploreHead {
+    border: 1px solid transparent;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 35%;
+    margin: 30px;
+    border-radius: 30px;
 }
 .featured {
     display: flex;
     align-items: center;
     justify-content: space-around;
     text-align: center;
+    flex-wrap: wrap;
 }
 .featured img {
-    width: 400px;
-    height: 250px;
+    width: 600px;
+    height: 300px;
     object-fit: cover;
     border: 1px transparent solid;
-    border-radius: 25px;
+    border-radius: 45px;
 }
 .float {
     opacity: 0; /* Initially hidden */
     position: absolute;
     top: 55%; /* Adjust as needed */
-    left: 47.5%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
     transform: translate(-50%, -50%);
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
@@ -123,7 +135,16 @@ img {
     width: 100%;
     height: 100%;
 }
-
+.float h3 {
+    font-size: 2rem;
+    font-style: oblique;
+    padding-top: 50px;
+}
+.float p {
+    width: 80%;
+    margin: auto;
+    font-size: 1.2rem;
+}
 .image-container:hover .float {
     opacity: 1; /* Display with full opacity on hover */
 }
