@@ -249,3 +249,140 @@ footer p {
     margin-left: 225px;
     padding: 25px;
 }
+/* About Me Section */ 
+#Aboutmebody {
+    background-image: url(Resources/Google.png);
+    background-size:cover;
+}
+.Intro {
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: relative;
+    top: 0;
+}
+.Intro p {
+    width:60%;
+    padding: 30px;
+}
+.Intro h1 {
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 5rem;
+    margin: 0;
+    width: 50%;
+    padding-top: 200px;
+    padding-left: 30px;
+}
+#profilepic {
+    width: 300px;
+    float: right;
+    vertical-align: middle;
+    padding-top: 150px;
+    height: 300px;
+    object-fit: cover;
+    padding-right: 50px;
+}
+.Intro img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+@Media only screen and (max-width: 600px) {
+    #profilepic {
+        float: none;
+    }
+    .Intro h1 {
+        padding-top: 10px;
+    }
+}
+.Lenny {
+    font-family: 'Roboto';
+    width: 80%;
+    padding: 30px;
+    padding-bottom: 0;
+}
+.Lenny h2 {
+    font-size: 3rem;
+    font-style: italic;
+}
+.Lenny p {
+    font-size: 1.2rem;
+    word-spacing: 0.3rem;
+    line-height: 1.5rem;
+    font-weight: 450;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 30px;
+}
+.skills h3{
+font-size: 3rem;
+font-style: italic;
+}
+.skills li {
+    display: inline-flex;
+    font-size: 1.2rem;
+    font-weight: 500;
+    align-items: center;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 80%;
+    margin-bottom: 30px;
+}
+.skills li img {
+    padding-right: 30px;
+}
+#JavaScript{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+#CSS {
+    margin-left: 25px;
+    width: auto;
+    height: 150px;
+}
+#HTML {
+    width: 150px;
+    height: auto;
+    margin-left: 5px;
+    margin-bottom: 15px;
+}
+.get-in-touch {
+    padding: 30px;
+    font-family: 'roboto';
+    padding-top: 15px;
+}
+.get-in-touch h2 {
+    font-size: 3rem;
+    margin-top: 0;
+    font-style: italic;
+}
+.get-in-touch ul {
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 30%;
+    padding-top: 20px;
+}
+.get-in-touch li {
+    display: flex;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+}
+.get-in-touch a {
+    padding-left: 25px;
+}
+#snapchat {
+    padding-left: 50px;
+}
