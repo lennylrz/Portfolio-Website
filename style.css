@@ -386,3 +386,85 @@ font-style: italic;
 #snapchat {
     padding-left: 50px;
 }
+
+/* Projects */
+#All h1{
+    font-family: helvetica;
+    font-size: 4rem;
+    font-style: italic;
+    margin-top: 150px;+
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 27%;
+    padding: 15px;
+    margin-left: 30px;
+    transition: width 0.3s ease, font-size 0.3s ease;
+}
+#All h1:hover {
+    width: 35%;
+    font-size: 5rem;
+}
+.projectCaption {
+    font-family: 'roboto';
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0 25px;
+    margin: auto;
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 1s;
+}
+.figures:active .projectCaption {
+    max-height: 1000px;
+    background-color: white;
+    border: 0px solid transparent;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 14px 58px 0px;
+}
+#gridProjects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.5fr, 0.5fr, 2fr, 1fr, 0.5fr, 0.5fr, 0.5fr, 0.5fr, 0.5fr;
+}
+.projectImage {
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px 20px 20px;
+    object-fit: cover;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 14px 58px 0px;
+}
+#age {
+    grid-area: 1 / 1 / 2 / 2;
+}
+#Broadway {
+    grid-area: 1 / 2 / 2 / 4;
+}
+#Cheatsheet {
+    grid-area: 2 / 1 / 3 / 3;
+}
+#Christina-nails {
+    grid-area: 3 / 1 / 4 / 4;
+}
+#Design-system {
+    grid-area: 4 / 1 / 5 / 3;
+}
+#Joke-generator {
+    grid-area: 5 / 2 / 7 / 4;
+}
+#Movieclub {
+    grid-area: 7 / 1 / 8 / 4;
+}
+#Sleepdebt {
+    grid-area: 9 / 1 / 11 / 3;
+}
+#Teacozy {
+    grid-area: 11 / 1 / 12 / 4;
+}
+#projectBody {
+    background-image: url(Resources/projectbackground.png);
+    background-size: cover;
+    background-position: center;
+}
