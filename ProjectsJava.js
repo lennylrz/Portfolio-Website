@@ -5,6 +5,7 @@ let isDarkModeProjects = false;
 let all = document.querySelectorAll('#All h1')
 let image = document.querySelectorAll('.projectImage')
 let caption = document.querySelectorAll('.projectCaption')
+let button = document.getElementById('button')
 function toggleModeProjects() {
     if (!isDarkModeProjects) {
         darkProjects();
@@ -22,6 +23,8 @@ function toggleModeProjects() {
             a.style.backgroundColor = '#252526';
             a.style.boxShadow = 'rgba(0, 0, 0, 0.2) 0px 7px 29px 0px';
         })
+        button.style.boxShadow = 'rgba(0, 0, 0, 0.2) 0px 7px 29px 0px'
+        button.style.backgroundColor = '#252526'
         image.forEach(function(i) {
             i.style.backgroundColor = '#252526';
             i.style.boxShadow = 'rgba(0, 0, 0, 0.2) 0px 7px 29px 0px';
@@ -54,6 +57,8 @@ function toggleModeProjects() {
             i.style.backgroundColor = '';
             i.style.boxShadow = '';
         })
+        button.style.boxShadow = ''
+        button.style.backgroundColor = ''
         caption.forEach(function(c) {
             c.style.backgroundColor = '';
             c.style.boxShadow = '';
@@ -68,3 +73,25 @@ function toggleModeProjects() {
     }
     elementProjects.onmousedown = clickedProjects
     elementProjects.onclick = toggleModeProjects;
+
+    let click = document.getElementsByClassName('dropdown')[0]
+let teleport = document.querySelector('#options');
+let main = document.querySelector('main')
+let isTele = false
+function tele() {
+    teleport.style.visibility = 'visible';
+    isTele = true;
+}
+function noTele() {
+    teleport.style.visibility = 'hidden'
+    isTele = false
+}
+function check() {
+    if (!isTele) {
+        tele()
+    } else {
+        noTele()
+    }
+}
+click.onclick = tele;
+main.onclick = noTele;

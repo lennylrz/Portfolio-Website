@@ -4,6 +4,7 @@ let nav = document.getElementsByClassName('navbar')[0]
 let navText = document.querySelectorAll('.navbar li a')
 let skills = document.querySelectorAll('.skills li')
 let getInTouch = document.querySelectorAll('.get-in-touch ul')
+let button = document.getElementById('button')
 let isDarkModeAbout = false;
 function toggleModeAbout() {
     if (!isDarkModeAbout) {
@@ -20,6 +21,8 @@ function darkAbout() {
         paragraph.style.color = '#f9f9f9';
         paragraph.style.boxShadow = 'rgba(0, 0, 0, 0.2) 0px 7px 29px 0px'
     });
+    button.style.boxShadow = 'rgba(0, 0, 0, 0.2) 0px 7px 29px 0px'
+    button.style.backgroundColor = '#252526'
     skills.forEach(function(skill) {
         skill.style.backgroundColor = '#252526'
         skill.style.color = '#f9f9f9'
@@ -62,6 +65,8 @@ function lightAbout() {
         skill.style.color = ''
         skill.style.boxShadow = ''
     } )
+    button.style.boxShadow = ''
+    button.style.backgroundColor = ''
     getInTouch.forEach(function(Touch) {
         Touch.style.backgroundColor = ''
         Touch.style.color = ''
@@ -74,3 +79,25 @@ function lightAbout() {
 }
 elementAbout.onmousedown = clickedAbout;
 elementAbout.onclick = toggleModeAbout;
+
+let click = document.getElementsByClassName('dropdown')[0]
+let teleport = document.querySelector('#options');
+let main = document.querySelector('main')
+let isTele = false
+function tele() {
+    teleport.style.visibility = 'visible';
+    isTele = true;
+}
+function noTele() {
+    teleport.style.visibility = 'hidden'
+    isTele = false
+}
+function check() {
+    if (!isTele) {
+        tele()
+    } else {
+        noTele()
+    }
+}
+click.onclick = tele;
+main.onclick = noTele;

@@ -498,6 +498,7 @@ font-style: italic;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 14px 58px 0px;
     cursor:pointer;
     z-index: 1;
+    text-align: center;
 }
 .dropdown {
     position: relative;

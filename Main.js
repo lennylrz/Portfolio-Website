@@ -6,6 +6,7 @@ let Explore = document.querySelectorAll('.exploreHead')
 let highlight = document.querySelectorAll('.highlight h2')
 let highlightFig = document.querySelectorAll('.highlight figure')
 let floats = document.getElementsByClassName('float')
+let button = document.getElementById('button')
 let isDarkMode = false;
 function toggleMode() {
     if (!isDarkMode) {
@@ -32,7 +33,8 @@ function toggleMode() {
         highlightFig.forEach(function(highFig) {
             highFig.style.boxShadow = 'rgba(0, 0, 0, 0.2) 0px 7px 29px 0px'
         })
-
+        button.style.boxShadow = 'rgba(0, 0, 0, 0.2) 0px 7px 29px 0px'
+        button.style.backgroundColor = '#252526'
         nav.style.backgroundColor ='#252526'
         document.body.style.color = '#f9f9f9'
         nav.style.boxShadow = 'rgba(0, 0, 0, 0.2) 0px 7px 29px 0px'
@@ -54,6 +56,8 @@ function toggleMode() {
         for (let i = 0; i < floats.length; i++) {
             floats[i].style.backgroundColor = '';
         }
+        button.style.boxShadow = ''
+        button.style.backgroundColor = ''
         Explore.forEach(function(explo) {
             explo.style.boxShadow = ''
         })
